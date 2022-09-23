@@ -6,8 +6,8 @@ function Header() {
     <div className='text-center'>
       <nav className="navbar navbar-expand-lg fixed-top py-0 navbar-dark bg-dark " id='navbar'>
         <Link className="navbar-brand text-danger font-weight-bold" to="/">Goat</Link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,15 +21,15 @@ function Header() {
             <li className="nav-item active">
               <Link className="nav-link" to="/offerzone">Offer Zone</Link>
             </li>
-            <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
-          </a>
-          <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item text-white" href="#">Gifting</a></li>
-            <li><a class="dropdown-item text-white" href="#">Blog</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item text-white" href="#">Earn Rs.100</a></li>
+          </Link>
+          <ul className="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
+            <li><Link className="dropdown-item text-white" >Gifting</Link></li>
+            <li><Link className="dropdown-item text-white" >Blog</Link></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><Link className="dropdown-item text-white" >Earn Rs.100</Link></li>
           </ul>
         </li>
           </ul>

@@ -9,7 +9,7 @@ function Card(prop) {
       </div>
       <div className="contant">
         <div id="title">
-          {prop.data.Title.length > 26 ? prop.cardmob=='cardmob'?((prop.data.Title.slice(0, 22)) + "..."):((prop.data.Title.slice(0, 26)) + "...") : prop.data.Title}
+          {prop.data.Title.length > 26 ? prop.cardmob ==='cardmob'?((prop.data.Title.slice(0, 22)) + "..."):((prop.data.Title.slice(0, 26)) + "...") : prop.data.Title}
         </div>
         <hr style={{ color: "black" }} />
         <div id="price">

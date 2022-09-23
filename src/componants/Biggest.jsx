@@ -10,7 +10,7 @@ function Biggest() {
     return (
 
         <div className='bestSeller'>
-            <h1 id='bestHeading'>Biggest Launches. Dopest Products. 🚀</h1>
+            <h1 id='bestHeading'>Biggest Launches. Dopest Products. <span role={"img"} aria-label="Rocket" >🚀</span></h1>
             <div className='best'>
                 {data_new.map(data => {
                     return (
