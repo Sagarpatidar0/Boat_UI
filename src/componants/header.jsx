@@ -22,14 +22,14 @@ function Header() {
               <Link className="nav-link" to="/offerzone">Offer Zone</Link>
             </li>
             <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link className="nav-link dropdown-toggle text-white" to={"/"} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
           </Link>
           <ul className="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item text-white" >Gifting</Link></li>
-            <li><Link className="dropdown-item text-white" >Blog</Link></li>
+            <li><Link className="dropdown-item text-white" to="/" >Gifting</Link></li>
+            <li><Link className="dropdown-item text-white" to="/" >Blog</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item text-white" >Earn Rs.100</Link></li>
+            <li><Link className="dropdown-item text-white" to="/" >Earn Rs.100</Link></li>
           </ul>
         </li>
           </ul>
