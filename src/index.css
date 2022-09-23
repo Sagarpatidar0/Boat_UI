@@ -1,13 +1,280 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: #252525;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ________________ Navbar __________________________*/
+#navbar {
+  /* background: #000 !important; */
+  color: rgb(255, 0, 0) !important;
+}
+
+.navbar-nav {
+  /* text-align: center; */
+  margin-left: auto;
+}
+
+.dropdown-item:hover{
+  color: black !important;
+}
+
+/* __________________Slider at Home page__________________________ */
+.slide {
+  height: 70vh;
+  width: 100vw;
+}
+
+/* .slide:hover{
+  display: none;
+} */
+/* _________________Best Seller page _____________________ */
+.bestSeller {
+  /* background: #000; */
+  color: white;
+}
+
+#bestHeading {
+  padding: 20px;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.best {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+  justify-content: space-between;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.best-daily {
+  margin-left: 65px !important;
+  margin-right: 0 !important;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.best::-webkit-scrollbar {
+  display: none;
+}
+
+/* _______________Single Product Card __________________ */
+.card {
+  height: 355px;
+  min-width: 250px;
+  background: RGB(226, 227, 226);
+  margin: 10px 10px 20px;
+  cursor: pointer;
+}
+
+.card_img {
+  height: 250px;
+  width: 100%;
+  margin: auto;
+}
+
+/* .card_img:hover{
+  display: none;
+} */
+.off {
+  position: absolute;
+  background: rgb(255, 49, 49);
+  top: 7px;
+  left: -1px;
+  border-radius: 2px;
+  font-size: small;
+  padding: 1px 2px 0 0;
+}
+
+.off-yellow {
+  background-color: RGB(251, 196, 10);
+}
+
+.contant {
+  height: 105px;
+  width: 98%;
+  /* width: 242px; */
+  margin: -10px 4px 0;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px;
+}
+
+#title {
+  height: 20px;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+#price {
+  color: red;
+  font-size: small;
+  font-weight: 500;
+  margin-top: -15px;
+}
+
+#sell {
+  font-size: x-small;
+  font-weight: 500;
+}
+
+.dis {
+  color: rgb(57, 56, 56);
+  padding-left: 10px;
+  text-decoration: line-through;
+}
+
+#btn {
+  height: 25px;
+  width: 100%;
+  background: red;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.btn-yellow {
+  background: RGB(251, 196, 10) !important;
+}
+
+#btn-text {
+  font-size: small;
+  font-weight: 500;
+}
+
+
+/* _________________ Video Card For Home Page _______________________ */
+.videoslider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.videoslider::-webkit-scrollbar {
+  display: none;
+}
+
+.vcard {
+  min-width: 188px;
+  height: 435px;
+  background: rgb(235, 231, 231);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 7px;
+}
+
+.video {
+  height: 350px;
+}
+
+.video video {
+  object-fit: cover;
+  width: 101%;
+  height: 100%;
+}
+
+.vtitle {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.vcategory {
+  margin-top: -15px;
+  color: RGB(133, 133, 133);
+}
+
+.vcontant hr {
+  margin: 1px 20px 0;
+  border: .1px solid RGB(131, 135, 139);
+}
+
+.arrival {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.vprice {
+  margin-top: -15px;
+}
+
+.vpricec {
+  font-size: 14px;
+  color: red;
+  padding-right: 5px;
+}
+
+.vpriced {
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+
+/* ___________________Daily deals Page________________ */
+
+.daily-contant {
+  color: white;
+  margin-left: 70px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.daily-timer {
+  margin-bottom: 40px;
+  background: RGB(251, 196, 10);
+  display: inline-block;
+  color: black;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.daily-timer span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* __________ Media Quary For Mobile Phones only __________ */
+
+@media screen and (max-width:543px) {
+  /* body {
+    background-color: lightblue;
+  } */
+
+  .best {
+    margin: 0px;
+  }
+
+  .slide {
+    margin-top: 25px;
+    height: 30vh;
+    width: 100vw;
+  }
+  .best-daily{
+    margin: 0px !important;
+    flex-direction:row;
+    flex-wrap: wrap;
+  } 
+
+  .cardmob{
+    height: 300px;
+    min-width: 48vw;
+    max-width: 48vw;
+    /* overflow: hidden;
+    background: #000; */
+    margin: 10px 0px 10px 5px;
+  }
+}
+
