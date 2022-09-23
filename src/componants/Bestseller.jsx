@@ -10,9 +10,9 @@ function Bestseller() {
         <div className='bestSeller'>
             <h1 id='bestHeading'>Best Seller</h1>
             <div className='best'>
-            {datas.slice(0,8).map(data => {
+            {datas.slice(0,8).map((data,key) => {
                 return (
-                    <Card data={data} />
+                    <Card data={data} key={key} />
                 )
             })}
             </div>

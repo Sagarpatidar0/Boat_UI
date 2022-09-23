@@ -3,7 +3,7 @@ import React from 'react'
 function Card(prop) {
   return (
     <div className={'card '+ prop.cardmob}>
-      <img src={prop.data.img} alt="" srcset="" className="card_img" />
+      <img src={prop.data.img} alt="" className="card_img" />
       <div className={"off " + prop.classoff}>
         Save:{prop.data.sell.slice(-4, -1)}
       </div>

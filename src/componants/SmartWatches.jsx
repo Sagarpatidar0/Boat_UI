@@ -11,9 +11,9 @@ function SmartWatches() {
         <div className='bestSeller'>
             <h1 id='bestHeading'>SmartWatches</h1>
             <div className='best'>
-            {data_new.map(data => {
+            {data_new.map((data,key) => {
                 return (
-                    <Card data={data} />
+                    <Card data={data} key={key}  />
                 )
             })}
             </div>

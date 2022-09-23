@@ -10,8 +10,8 @@ function VideoSlides({ video, start, end }) {
   return (
     <div className='videoslider' style={{ display: "flex", overflowX: "scroll", justifyItems:"center" }}>
       {
-        video_datas.map(video_data=>{
-           return <VideoCard data={video_data} />
+        video_datas.map((video_data,i)=>{
+           return <VideoCard data={video_data} key={i} />
         }
         )
       }
